@@ -2,17 +2,13 @@ import React from 'react';
 
 import { TitleText } from '../components/TitleText/TitleText';
 import { AppHeader } from '../components/AppHeader';
-import {
-  CheckContentButton,
-  CheckContentText,
-} from '../components/CheckContent/CheckContent';
+import { CheckContent } from '../components/CheckContent/CheckContent';
 
 const IndexPage = () => (
   <>
     <TitleText />
     <AppHeader />
-    <CheckContentText />
-    <CheckContentButton />
+    <CheckContent />
   </>
 );
 

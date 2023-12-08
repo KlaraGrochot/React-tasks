@@ -1,12 +1,22 @@
 @import '../../assets/styles/theme';
 
-.text {
+.textRedB {
   border-style: solid;
   padding: 50px;
   margin-left: 10px;
   margin-right: 87%;
   border-width: 2px;
   border-color: $red;
+  border-radius: 5px;
+}
+
+.textGreenB {
+  border-style: solid;
+  padding: 50px;
+  margin-left: 10px;
+  margin-right: 87%;
+  border-width: 2px;
+  border-color: $green;
   border-radius: 5px;
 }
 

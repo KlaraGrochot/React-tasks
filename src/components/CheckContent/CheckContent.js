@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { text } from './CheckContent.module.scss';
-import { button } from './CheckContent.module.scss';
+import { textRedB, textGreenB, button } from './CheckContent.module.scss';
 
-export let CheckContentText = () => (
-  <p className={`${text} checkContentText`}>Turned Off</p>
-);
+export const CheckContent = () => {
+  const [turnedOn, setTurnedOn] = useState(false);
+  const borderStyle = turnedOn ? textGreenB : textRedB;
 
-export let CheckContentButton = () => (
-  <button className={`${button} checkContentButton`}>Turn On</button>
-);
+  const handleButtonClick = () => {
+    setTurnedOn(!turnedOn);
+  };
+
+  return (
+    <div>
+      <p className={borderStyle}>{turnedOn ? 'Turned On' : 'Turned Off'}</p>
+
+      <button
+        onClick={handleButtonClick}
+        className={`${button} checkContentButton`}
+      >
+        {turnedOn ? 'Turn Off' : 'Turn On'}
+      </button>
+    </div>
+  );
+};
