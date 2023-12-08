@@ -1,0 +1,25 @@
+@import '../../assets/styles/theme';
+
+.number {
+  border-style: solid;
+  padding: 10px 30px;
+  margin-top: 20px;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  margin-right: 87%;
+  border-width: 2px;
+  border-color: $black;
+  border-radius: 5px;
+}
+
+.counterButton {
+  background-color: $babyBlue;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  margin-right: 30px;
+  padding: 10px 20px;
+}
